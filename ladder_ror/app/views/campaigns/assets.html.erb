@@ -8,37 +8,20 @@
 
 <div class="container">
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#audiences">Audiences</a></li>
-    <li><a data-toggle="tab" href="#messages">Messages</a></li>
-    <li><a data-toggle="tab" href="#creative">Creative</a></li>
+    <li class="active"><a data-toggle="tab" href="#audiencesA">Audiences</a></li>
+    <li><a data-toggle="tab" href="#messagesA">Messages</a></li>
+    <li><a data-toggle="tab" href="#creativeA">Creative</a></li>
   </ul>
 
   <div class="tab-content">
     <div id="audience" class="tab-pane fade in active">
-      <%= render 'audiences' %>
+      <%= render 'audiencesA' %>
     </div>
     <div id="messages" class="tab-pane fade">
-      <%= render 'messages' %>
+      <%= render 'messagesA' %>
     </div>
     <div id="creative" class="tab-pane fade">
-      <%= render 'creative' %>
+      <%= render 'creativeA' %>
     </div>
   </div>
 </div>
-
-<% if false %>
-<div class="tabbable tabs-left">
-<ul class="nav nav-tabs">
-    <li class="<%= 'active' if params[:tab] == 'tab1' %>"><a href="#tab1" data-toggle="tab">About us</a></li>
-    <li class="<%= 'active' if params[:tab] == 'tab9' %>"> <a href="#tab9" data-toggle="tab">Address</a></li>
-</ul>
-
-<div class="tab-content">
-    <div class="<%= if (params[:tab] == 'tab1' || !params[:tab])then 'tab-pane active'  else 'tab-pane' end%>" id="tab1">
-        <%= render 'audiences' %>
-    </div>
-    <div class="<%= if params[:tab] == 'tab9' then 'tab-pane active'  else 'tab-pane' end%>" id="tab9">
-        <%= render 'messages' %>
-    </div>
-</div>
-<% end %>

@@ -4,3 +4,24 @@
 
 <p>the other fancy tabbed page will be here.</p>
 
+<%= yield %>
+
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#audiencesP">Audiences</a></li>
+    <li><a data-toggle="tab" href="#messagesP">Messages</a></li>
+    <li><a data-toggle="tab" href="#creativeP">Creative</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="audience" class="tab-pane fade in active">
+      <%= render 'audiencesP' %>
+    </div>
+    <div id="messages" class="tab-pane fade">
+      <%= render 'messagesP' %>
+    </div>
+    <div id="creative" class="tab-pane fade">
+      <%= render 'creativeP' %>
+    </div>
+  </div>
+</div>

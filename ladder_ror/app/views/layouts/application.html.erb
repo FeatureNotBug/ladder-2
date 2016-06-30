@@ -19,16 +19,10 @@
 <body>
 
 <nav>
-  <a href="">Assets</a>
-  <a href="">Structure</a>
-  <a href="">Performance</a>
+  <%= link_to 'Assets', root_path %> | 
+  <%= link_to 'Structure', campaigns_structure_path %> | 
+  <%= link_to 'Performance', campaigns_performance_path %>
 </nav>
-
-<%= tabs_tag do |tab| %>
-  <%= tab.assets 'Assets', root_path %>
-  <%= tab.structure 'Structure', campaigns_structure_path %>
-  <%= tab.performance 'Performance', campaigns_performance_path %>
-<% end %>
 
 <%= yield %>
 
