@@ -13,11 +13,18 @@
 </head>
 <body>
 
+<%= tabs_tag do |tab| %>
+  <%= tab.home      'Homepage', root_path %>
+  <%= tab.dashboard 'Dashboard', dashboard_path %>
+  <%= tab.account   'Account', account_path %>
+<% end %>
+/*
 <nav>
 <a href="">Assets</a>
 <a href="">Structure</a>
 <a href="">Performance</a>
 </nav>
+*/
 
 <%= yield %>
 
