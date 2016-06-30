@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'campaigns/assets'
   get 'campaigns/structure'
   get 'campaigns/performance'
+  resources :campaigns
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
