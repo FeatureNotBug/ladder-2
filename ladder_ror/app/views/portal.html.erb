@@ -4,3 +4,14 @@
 
 <p>View a campaign</p>
 <p>maybe do this through a rendered partial?  Otherwise, will be an additional link, unless can find another way online.  I would prefer this to be a single page where you can both add AND view all.  In which case, a form could be added above, and over here would be list of all campaigns.  Maybe also a search option?</p>
+
+<table>
+  <tr>
+    <th>Campaign</th>
+  </tr>
+  <% @campaigns.each do |campaign| %>
+    <tr>
+      <td><% campaign.name %></td>
+    </tr>
+  <% end %>
+</table>
