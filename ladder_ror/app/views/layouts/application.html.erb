@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style type="text/css">
+    body {
+      font-family: Arial, Helvetical, sans-serif;
+    }
+  </style>
   <title>Ladderror</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav>
+<a href="">Assets</a>
+<a href="">Structure</a>
+<a href="">Performance</a>
+</nav>
 
 <%= yield %>
 
