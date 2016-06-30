@@ -1,7 +1,29 @@
 Tabulous.setup do
 
   tabs do
+    assets_tab do
+      text            { 'Assets' }
+      link_path       { root_path }
+      visible_when    { true }
+      enabled_when    { true }
+      active_when     { in_action('any').of_controller('assets') }
+    end
+    
+    structure_tab do
+      text            { 'Structure' }
+      link_path       { campaigns_structure_path }
+      visible_when    { true }
+      enabled_when    { true }
+      active_when     { in_action('any').of_controller('structure') }
+    end
 
+    performance_tab do
+      text            { 'Performance' }
+      link_path       { performance_structure_path }
+      visible_when    { true }
+      enabled_when    { true }
+      active_when     { in_action('any').of_controller('performance') }
+    end
   end
 
   customize do
