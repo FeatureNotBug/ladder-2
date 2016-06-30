@@ -13,18 +13,17 @@
 </head>
 <body>
 
-<%= tabs_tag do |tab| %>
-  <%= tab.home      'Homepage', root_path %>
-  <%= tab.dashboard 'Dashboard', dashboard_path %>
-  <%= tab.account   'Account', account_path %>
-<% end %>
-/*
 <nav>
-<a href="">Assets</a>
-<a href="">Structure</a>
-<a href="">Performance</a>
+  <a href="">Assets</a>
+  <a href="">Structure</a>
+  <a href="">Performance</a>
 </nav>
-*/
+
+<%= tabs_tag do |tab| %>
+  <%= tab.assets 'Assets', root_path %>
+  <%= tab.structure 'Structure', campaigns_structure_path %>
+  <%= tab.performance 'Performance', campaigns_performance_path %>
+<% end %>
 
 <%= yield %>
 
