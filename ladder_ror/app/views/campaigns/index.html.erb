@@ -3,7 +3,7 @@
 <p>Add a campaign</p>
 <div>
   <%= form_for(Campaign.new) do |f| %>
-    <%= f.label :name %>
+    <%= f.label :name, 'Name' %>
     <%= f.text_field :name %>
 
     <%= f.submit "Create", class: "btn btn-primary" %>
