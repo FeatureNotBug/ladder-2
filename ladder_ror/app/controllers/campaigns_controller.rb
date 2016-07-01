@@ -1,4 +1,5 @@
 class CampaignsController < ApplicationController
+  layout "special", except: [:index]
   def index
     @campaigns = Campaign.all
   end
