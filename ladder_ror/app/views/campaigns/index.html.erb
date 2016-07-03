@@ -31,10 +31,10 @@
       <form role="form">
       <% @campaigns.each do |campaign| %>
         <div class="radio">
-         <%= radio_button_tag 'campaign', campaign.name, :checked=>true %>
-         <%= label 'campaign', campaign.name %>
-    </div>
-  <% end %>
+          <%= radio_button_tag 'campaign', campaign.name, :checked=>true %>
+          <%= label 'campaign', campaign.name %>
+        </div>
+      <% end %>
   <%= submit_tag(value = "View", options = {class: "btn btn-primary" }) %>
   </form>
 </div>
