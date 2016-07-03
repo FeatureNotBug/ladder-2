@@ -24,3 +24,17 @@
     </tr>
   <% end %>
 </table>
+
+<p>Let's try to make this a radio button form</p>
+<div class="container">
+  <h2>View Campaign Report</h2>
+      <form role="form">
+      <% @campaigns.each do |campaign| %>
+        <div class="radio">
+         <%= radio_button_tag 'campaign', campaign.name, :checked=>true %>
+         <%= label 'campaign', campaign.name %>
+    </div>
+  <% end %>
+  <%= submit_tag(value = "View", options = {class: "btn btn-primary" }) %>
+  </form>
+</div>
