@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # root 'campaigns#assets'
   root 'campaigns#index'
   get 'campaigns/assets'
+  post 'campaigns/assets'
   get 'campaigns/structure'
   get 'campaigns/performance'
 
