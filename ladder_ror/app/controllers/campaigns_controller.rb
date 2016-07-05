@@ -9,6 +9,7 @@ class CampaignsController < ApplicationController
   end
 
   def new
+#    @session[:campaign_id] ||= 1
     @campaign = Campaign.new
   end
 

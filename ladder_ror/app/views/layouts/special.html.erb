@@ -36,7 +36,7 @@
   <%= link_to 'Performance', campaigns_performance_path %>
 </nav>
 
-<h1>Viewing <%= Campaign.find(1).name %></h1>
+<h1>Viewing <%= Campaign.find(session[:campaign_id]).name %></h1>
 
 <%= yield %>
 

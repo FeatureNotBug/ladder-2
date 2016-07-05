@@ -24,6 +24,21 @@
 </table>
 
 <p>Let's try to make this a radio button form</p>
+
+<div class="container">
+  <h2>View Campaign Report</h2>
+      <%= form_for campaigns_assets_path do |f| %>
+      <% @campaigns.each do |campaign| %>
+        <div class="radio">
+          <%= radio_button_tag 'campaign', campaign.id, :checked=>true %>
+          <%= label 'campaign', campaign.id, campaign.name %>
+        </div>
+      <% end %>
+  <%= submit_tag(value = "View", options = {class: "btn btn-primary" }) %>
+  <% end %>
+</div>
+
+<!--
 <div class="container">
   <h2>View Campaign Report</h2>
       <form role="form">
@@ -36,3 +51,4 @@
   <%= submit_tag(value = "View", options = {class: "btn btn-primary" }) %>
   </form>
 </div>
+-->
