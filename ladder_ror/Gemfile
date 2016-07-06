@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'devise', '3.4.1'
+gem 'bootstrap-sass'
 gem 'rename'
 gem 'tabs_on_rails'
 #gem 'tabulous'
