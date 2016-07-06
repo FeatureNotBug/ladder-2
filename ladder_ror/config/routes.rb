@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-   root 'welcome#home'
+  root 'welcome#home'
+  get 'campaigns/assets' => "campaigns#assets", as: :user_root
 #  root 'campaigns#index' -> I will do this once I can even get the rest working. LOW PRIORITY
   get 'campaigns/assets'
 #  post 'campaigns/assets' -> hopefully won't need this. LOW PRIORITY
