@@ -1,4 +1,4 @@
-== Database Work
+# Database Work
 
 - add Audience object
   - Each Campaign will have an array of Audiences (probably represented by ids unless I can find way to declare directly)
@@ -14,12 +14,12 @@
   - Each Campaign will have an array of Creatives (see above parens)
 - Add Creative + Select Creative buttons
 
-== Next on Todo
+# Next on Todo
 
 - Everything is sent to the client for approval
   - at this rate, will probably do by sending link to platform (?)
 
-= API related
+## API related
 
 - Put Campaign live (ELSEWHERE, an indicator shows "live")
 - Make the report out of the stats
