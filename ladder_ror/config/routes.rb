@@ -5,10 +5,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  # root 'campaigns#assets'
-  root 'campaigns#index'
+   root 'campaigns#assets'
+#  root 'campaigns#index' -> I will do this once I can even get the rest working. LOW PRIORITY
   get 'campaigns/assets'
-  post 'campaigns/assets'
+#  post 'campaigns/assets' -> hopefully won't need this. LOW PRIORITY
   get 'campaigns/structure'
   get 'campaigns/performance'
 
