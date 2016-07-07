@@ -1,3 +1,37 @@
 <p>AUDIENCE</p>
-<%= image_tag("audience.png") %>
-<figcaption>Audience 1</figcaption>
+<p>Add an audience</p>
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#audModal">Add</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="audModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Fill in Audience stats</h4>
+          <%= form_for(Audience.new) do |f| %>
+            <%= f.label :title, 'Title' %>
+            <%= f.text_field :title %> <br>
+            <%= f.label :description, 'Description' %>
+            <%= f.text_area :description %>
+          <% end %> 
+        </div>
+        <div class="modal-body">
+          <p>Fill in these fields to create the new audience.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<div>
+  <%= image_tag("audience.png") %>
+  <figcaption>Audience 1</figcaption>
+</div>
