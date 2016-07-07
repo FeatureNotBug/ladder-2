@@ -1,12 +1,15 @@
+# Priority
+
+- Get landing page w/options up
+
 # Database Work
 
 - Add + Select Audience buttons
 
-- add Message object
-  - each Message knows which Campaign it is associated with
 - Add Message + Select Message buttons
 
 - add Creative object (is that an image file?)
+  - if so, might think about using Paperclip or Carrierwave
   - each Creative knows which Campaign it is associated with
 - Add Creative + Select Creative buttons
 
