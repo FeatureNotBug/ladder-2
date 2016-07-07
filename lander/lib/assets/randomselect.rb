@@ -3,7 +3,7 @@ def choose_random(arr)
 end
 
 # try to choose w/no repeats?
-def generate_combos(n, item1, item2, item3)
+def generate_combos(n, item1, item2, item3, u1, u2, u3)
   used = []
   for i in 0..n do
     while used.include?(chose1 = choose_random(item1))

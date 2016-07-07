@@ -1,6 +1,8 @@
 # ladder
 probably good idea for us to share code and think about how we split this up/what is practical and possible for each of us to do.
 
+THIS README IS SO OUT OF DATE LOL
+
 ## If you want to see how the pages look:
 I don't know another way (currently) other than
 - install rails and ruby (with RVM is good, just look it up and follow the steps)
