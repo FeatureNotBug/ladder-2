@@ -1,1 +1,4 @@
 <h2>This is where you'd choose your brand's audience</h2>
+<% File.open("app/assets/audiences.txt", "r").each_line do |line| %>
+  <%= line %><br>
+<% end %>
