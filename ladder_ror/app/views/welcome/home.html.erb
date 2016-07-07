@@ -1,2 +1,19 @@
 <h1>The Homepage Will Be Here</h1>
-<%= link_to "LOG IN", new_user_session_path %> or <%= link_to "SIGN UP", new_user_registration_path %>
+<% if (not user_signed_in?) then %>
+  <%= link_to "LOG IN", new_user_session_path %> or <%= link_to "SIGN UP", new_user_registration_path %>
+<% else %>
+  <h2>Welcome</h2>
+  <p>Your campaigns:</p>
+  <% current_user.campaigns.each do |campaign| %>
+    <%= link_to campaign.name, campaigns_assets_path %> <br>
+  <% end %>
+  <p>Add a campaign</p>
+  <div>
+    <%= form_for(Campaign.new) do |f| %>
+      <%= f.label :name, 'Name' %>
+      <%= f.text_field :name %>
+
+      <%= f.submit "Create", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+<% end %>
