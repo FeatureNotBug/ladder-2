@@ -1,6 +1,10 @@
 # Priority
 
 - Get landing page w/options up
+- Randomizations of combos:
+  - will need an array of all the possible options
+    - should this be done in controller? (probably not neatest way to do)
+    - or can generate a random number and then read up to that line?
 
 # Database Work
 
