@@ -1,17 +1,13 @@
 # Database Work
 
-- add Audience object
-  - Each Campaign will have an array of Audiences (probably represented by ids unless I can find way to declare directly)
-  - Possibly property of Audience is description?
 - Add + Select Audience buttons
 
 - add Message object
-  - Each Campaign will have an array of Messages (see above parens)
-  - Message is text format?
+  - each Message knows which Campaign it is associated with
 - Add Message + Select Message buttons
 
 - add Creative object (is that an image file?)
-  - Each Campaign will have an array of Creatives (see above parens)
+  - each Creative knows which Campaign it is associated with
 - Add Creative + Select Creative buttons
 
 # Next on Todo
@@ -22,6 +18,7 @@
 ## API related
 
 - Put Campaign live (ELSEWHERE, an indicator shows "live")
+  - therefore, need Campaign to have property "status"
 - Make the report out of the stats
 
 ## Other (ought to have them, but may not get to -??!)
