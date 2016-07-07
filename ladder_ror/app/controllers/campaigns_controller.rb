@@ -16,6 +16,7 @@ class CampaignsController < ApplicationController
   def create
     @campaign = Campaign.new(campaign_params)
     if @campaign.save
+    #  current_user.campaigns.
       redirect_to root_path,  :notice => "Your campaign was saved"
     else
       render "new"
