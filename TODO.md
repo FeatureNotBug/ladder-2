@@ -14,6 +14,7 @@
     - need session[:campaign] <- should be the only session var I need.
     - set this session var thru dropdown
       - a before_filter should not be necessary, since you can't access the other pages anyway (unless you're being stupid)
+    - alternatively, use a database field
 
 - Add + Select Audience buttons
 
