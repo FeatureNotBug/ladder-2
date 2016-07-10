@@ -3,9 +3,8 @@
 - Get landing page w/options up
 - Randomizations of combos:
   - will need an array of all the possible options
-    - should this be done in controller? (probably not neatest way to do)
-    - or can generate a random number and then read up to that line?
-  - don't agonize over this; the numbers will be small so inefficiency is not that big a deal
+    - WHERE is this code inserted?  Currently in lib/assets
+- submit link from index to result page (which should include the login)
 
 # Database Work
 
