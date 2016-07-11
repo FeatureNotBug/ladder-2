@@ -4,7 +4,9 @@
 - Randomizations of combos:
   - will need an array of all the possible options
     - WHERE is this code inserted?  Currently in lib/assets
-- submit link from index to result page (which should include the login)
+- submit link from index to result page
+- add in actual form (checkbox parts + require certain number checked) to generate random choices
+  - don't generate all combos user chose for now
 
 # Database Work
 
