@@ -7,6 +7,7 @@
 - submit link from index to result page
 - add in actual form (checkbox parts + require certain number checked) to generate random choices
   - don't generate all combos user chose for now
+    - nvm I might have to
 
 # Database Work
 
