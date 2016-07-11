@@ -1,2 +1,5 @@
 <h2>This is where you'd choose identity </h2>
 <p>Who are you?</p>
+<% File.open("app/assets/identities.txt", "r").each_line do |line| %>
+  <%= line %><br>
+<% end %>
