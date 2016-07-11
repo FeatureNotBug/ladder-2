@@ -6,7 +6,7 @@
 -->
 
 <h2>attempt at creating form</h2>
-<%= form_tag("/result", method: "get") do %>
+<%= form_tag(welcome_result_path, method: "get") do %>
   <%= render partial: "choose_identity" %>
   <%= render partial: "choose_msg" %>
   <%= render partial: "choose_audience" %>
