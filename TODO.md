@@ -9,11 +9,12 @@
 # Database Work
 
 - Issues to resolve: 
-  - figure out how session variables work
-    - need session[:campaign] <- should be the only session var I need.
-    - set this session var thru dropdown
-      - a before_filter should not be necessary, since you can't access the other pages anyway (unless you're being stupid)
-    - alternatively, use a database field
+  - work out how links campaigns/1 etc will work
+  - REMINDER:
+    - user -> campaigns
+    - campaign -> audiences
+               -> messages
+               -> creatives
 
 - Add + Select Audience buttons
 
