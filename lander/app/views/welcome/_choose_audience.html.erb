@@ -41,6 +41,7 @@ div label input {
     color:#fff;
 }
 </style>
+</head>
 
 <h2>This is where you'd choose your brand's audience</h2>
 <p>Whom are you trying to reach?</p>
@@ -51,10 +52,4 @@ div label input {
   <span><%= aud %></span></label>
 </div>
 <% end %>
-
-<br><br><br><br><br>
-<p>Hey there!</p>
-<% @audience_arr.each do |aud| %>
-  <%= check_box_tag 'audience', aud %>
-  <%= label 'audience', aud, aud %><br>
-<% end %>
+<br>

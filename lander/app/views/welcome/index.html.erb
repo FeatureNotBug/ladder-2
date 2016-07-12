@@ -6,9 +6,9 @@
 -->
 
 <%= form_tag(welcome_result_path, method: "get") do %>
-  <%= render partial: "choose_identity" %>
-  <%= render partial: "choose_msg" %>
-  <%= render partial: "choose_audience" %>
+  <%= render partial: "choose_identity" %><br>
+  <%= render partial: "choose_msg" %><br>
+  <%= render partial: "choose_audience" %><br>
   <%= submit_tag("That's My Brand!") %>
 <% end %>
 
