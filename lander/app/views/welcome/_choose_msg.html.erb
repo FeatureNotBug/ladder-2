@@ -1,5 +1,7 @@
 <h2>This is where you'd choose what your brand message is</h1>
 <p>What are your company's core values?</p>
-<% File.open("app/assets/messages.txt", "r").each_line do |line| %>
-  <%= line %><br>
+
+<% @message_arr.each do |msg| %>
+  <%= check_box_tag 'message', msg %>
+  <%= label 'message', msg, msg %><br>
 <% end %>
