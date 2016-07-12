@@ -3,9 +3,6 @@
 div label input {
    margin-right:100px;
 }
-body {
-    font-family:sans-serif;
-}
 
 #ck-button {
     margin:4px;
@@ -22,7 +19,10 @@ body {
 
 #ck-button label {
     float:left;
-    width:4.0em;
+    width:8.0em;
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 #ck-button label span {
@@ -47,8 +47,8 @@ body {
 
 <% @audience_arr.each do |aud| %>
 <div id="ck-button">
-  <%= check_box_tag 'audience', aud %>
-  <%= label 'audience', aud, aud %><span></span>
+  <label><%= check_box_tag 'audience', aud %>
+  <span><%= aud %></span></label>
 </div>
 <% end %>
 
