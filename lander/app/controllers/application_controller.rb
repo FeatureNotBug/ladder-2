@@ -66,17 +66,17 @@ class ApplicationController < ActionController::Base
     @user_triplet = Triplet.new() #make it accessible to form and change accordingly?
     @audience_arr = []
     File.open("app/assets/audiences.txt", "r").each_line do |a|
-      @audience_arr << a
+      @audience_arr << a.chomp
     end
 
     @identity_arr = []
     File.open("app/assets/identities.txt", "r").each_line do |i|
-      @identity_arr << i
+      @identity_arr << i.chomp
     end
 
     @message_arr = []
     File.open("app/assets/messages.txt", "r").each_line do |m|
-      @message_arr << m
+      @message_arr << m.chomp
     end
 
   end
