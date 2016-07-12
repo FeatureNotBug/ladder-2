@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  helper_method :make_triplet
+
   class Triplet
     attr_accessor :element1, :element2, :element3
 
@@ -35,14 +37,15 @@ class ApplicationController < ActionController::Base
   end
 
   def choose_random(arr)
-    array.sample #yes this is simple but I'll leave it here for now
+    arr.sample #yes this is simple but I'll leave it here for now
   end
 
   def make_triplet(arr1, arr2, arr3)
     chose1 = choose_random(arr1)
     chose2 = choose_random(arr2)
     chose3 = choose_random(arr3)
-    triplet = Triplet.new(chose1, chose2, chose3)
+    triplet = Triplet.new()
+    triplet.init_with(chose1, chose2, chose3)
     return triplet
   end
 
