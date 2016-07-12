@@ -1,13 +1,10 @@
 # Priority
 
-- Get landing page w/options up
-- Randomizations of combos:
-  - will need an array of all the possible options
-    - WHERE is this code inserted?  Currently in lib/assets
 - submit link from index to result page
 - add in actual form (checkbox parts + require certain number checked) to generate random choices
   - don't generate all combos user chose for now
     - nvm I might have to
+  - FYI, radio button can be done by using still ck-button, but use radio_button_tag vs check_box_tag
 
 # Database Work
 
