@@ -65,6 +65,8 @@ class ApplicationController < ActionController::Base
   end
 
   before_filter :set_arrays
+  before_filter :set_users_arrays
+
   def set_arrays
     @user_triplet = Triplet.new() #make it accessible to form and change accordingly?
     @audience_arr = []
@@ -84,4 +86,12 @@ class ApplicationController < ActionController::Base
 
   end
 
+  def set_users_arrays
+    @users_audiences = []
+    @users_messages = []
+    @users_type = []
+  end
+
+  def get_users_info
+  end
 end
