@@ -1,4 +1,11 @@
 # Priority
+- ladder person needs to get survey results in readable way w potential client is served that 15 minute call 
+- output notification
+- product onboarding process, but short version would be automatically get on phone, autoschedule someone for a call
+- need their website url
+- process for ladder person to export the proper data field from FB campaign and input them into the product so that there is a standard report view in theproduct that not necessarily has to be fed by API but by csv
+  - a todo for devs connection contact stuff
+- standardize reporting export import workflow
 
 - submit link from index to result page
 - thoughts on how to pass info:
@@ -10,12 +17,18 @@
     - nvm I might have to
   - FYI, radio button can be done by using still ck-button, but use radio_button_tag vs check_box_tag
 
+- moodboarding client side stuff
+  - allows client some control over creative appearance
+    - would that be another tab (can control from cancan)
+      - maybe make AdminController < UserController (so there would be overlap in what admin can do, whatever, can clean that up later)
+
 # Database Work
 
 - Issues to resolve: 
   - work out how links campaigns/1 etc will work
   - REMINDER:
     - user -> campaigns
+      - [(maybe) NOT NECESSARY]
     - campaign -> audiences
                -> messages
                -> creatives
