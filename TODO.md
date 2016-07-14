@@ -1,12 +1,13 @@
 # Priority
+## post-meeting
 - ladder person needs to get survey results in readable way w potential client is served that 15 minute call 
 - output notification
 - product onboarding process, but short version would be automatically get on phone, autoschedule someone for a call
-- need their website url
 - process for ladder person to export the proper data field from FB campaign and input them into the product so that there is a standard report view in theproduct that not necessarily has to be fed by API but by csv
   - a todo for devs connection contact stuff
 - standardize reporting export import workflow
 
+## still to-do
 - submit link from index to result page
 - thoughts on how to pass info:
   - maybe add a "next" button and use renders (Will 1 page scroll work?  Need to add JS in header)
