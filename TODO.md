@@ -7,6 +7,10 @@
   - a todo for devs connection contact stuff
 - standardize reporting export import workflow
 
+## maybe
+- only allow 3-5 msgs chosen, all audiences can be chosen, think about business type too
+- what I would like are the moodboarding items.
+
 ## still to-do
 - submit link from index to result page
 - thoughts on how to pass info:
