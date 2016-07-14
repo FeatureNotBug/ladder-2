@@ -48,7 +48,7 @@ div label input {
 
 <% @message_arr.each do |msg| %>
 <div id="ck-button">
-  <label><%= check_box_tag 'message', msg %>
+  <label><%= check_box_tag '@users_messages[]', msg %>
   <span><%= msg %></span></label>
 </div>
 <% end %>

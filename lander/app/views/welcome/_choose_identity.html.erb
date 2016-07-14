@@ -48,7 +48,7 @@ div label input {
 
 <% @identity_arr.each do |id| %>
 <div id="ck-button">
-  <label><%= radio_button_tag 'identity', id %>
+  <label><%= radio_button_tag '@users_type[]', id %>
   <span><%= id %></span></label>
 </div>
 <% end %>
