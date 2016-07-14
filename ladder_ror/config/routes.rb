@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root 'welcome#home'
   get 'campaigns/assets' => "campaigns#assets", as: :user_root
-#  root 'campaigns#index' -> I will do this once I can even get the rest working. LOW PRIORITY
+#  root 'campaigns#index'# -> I will do this once I can even get the rest working. LOW PRIORITY
   get 'campaigns/assets'
 #  post 'audiences#create'
-#  post 'campaigns/assets' -> hopefully won't need this. LOW PRIORITY
+  post 'campaigns/assets' #-> hopefully won't need this. LOW PRIORITY
   get 'campaigns/structure'
   get 'campaigns/performance'
 
