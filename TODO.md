@@ -4,6 +4,7 @@
 - thoughts on how to pass info:
   - maybe add a "next" button and use renders (Will 1 page scroll work?  Need to add JS in header)
   - or look into nested forms -> WILL TRY THIS FIRST
+  - "this is my brand" button wouldn't necessarily have to be part of a real form; could just be page redirection!
 - add in actual form (checkbox parts + require certain number checked) to generate random choices
   - don't generate all combos user chose for now
     - nvm I might have to
