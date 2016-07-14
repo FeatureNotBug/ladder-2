@@ -10,3 +10,17 @@
 <%= trip.element2 %>
 <%= trip.element3 %>
 <p>Contact info section</p>
+<%= form_for(Contact.new) do |f| %>
+  <div>
+  <%= f.email_field :email %>
+  <%= f.label("Email") %>
+  </div>
+
+  <div>
+  <%= f.url_field :website %>
+  <%= f.label("Website") %>
+  </div>
+
+  <br>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+<% end %>
