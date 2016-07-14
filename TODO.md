@@ -2,7 +2,7 @@
 
 - submit link from index to result page
 - thoughts on how to pass info:
-  - maybe add a "next" button and use renders
+  - maybe add a "next" button and use renders (Will 1 page scroll work?  Need to add JS in header)
   - or look into nested forms -> WILL TRY THIS FIRST
 - add in actual form (checkbox parts + require certain number checked) to generate random choices
   - don't generate all combos user chose for now
