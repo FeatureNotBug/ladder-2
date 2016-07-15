@@ -52,7 +52,7 @@ body {
   /*font-family: Georgia;*/
   font-family: "Bernino Sans Condensed";
   font-size: 34px;
-  font-style: italic;
+  /*font-style: italic;*/
   letter-spacing: -1px;
   width: 12000px;
   position: absolute;
@@ -151,7 +151,7 @@ body {
 </head>
 
 <div class="section black" id="section1">
-  <h2>Section 1</h2>
+  <h2>What type of business are you?</h2>
   <center><p>
     <% i = 0 %>
     <center>
@@ -174,11 +174,23 @@ body {
   </ul>
 </div>
 <div class="section white" id="section2">
-  <h2>Section 2</h2>
-  <p>
-    ‘A fathomless and boundless deep, There we wander, there we weep; On the hungry craving wind My Spectre follows thee behind.
+  <h2>Which values define your business?</h2>
 
-  </p>
+  <center><p>
+    <% i = 0 %>
+    <center>
+    <% @message_arr.each do |msg| %>
+      <div id="ck-button">
+        <label><%= check_box_tag '@users_messages[]', msg %>
+        <span><%= msg %></span></label>
+      </div>
+      <% if (not i.even?) %></center> <br><br> <center>
+      <% end %>
+      <% i += 1 %>
+    <% end %>
+  </center> <br>
+  </p></center>
+
   <ul class="nav">
     <li><a href="#section1">1</a></li>
     <li>2</li>
@@ -186,11 +198,25 @@ body {
   </ul>
 </div>
 <div class="section black" id="section3">
-  <h2>Section 3</h2>
-  <p>
-    ‘He scents thy footsteps in the snow Wheresoever thou dost go, Thro’ the wintry hail and rain. When wilt thou return again?
+  <h2>Which audiences are you targetting?</h2>
 
-  </p>
+  <center><p>
+    <% i = 0 %>
+    <center>
+    <% @audience_arr.each do |aud| %>
+      <div id="ck-button">
+        <label><%= radio_button_tag '@users_audiences[]', aud %>
+        <span><%= aud %></span></label>
+      </div>
+      <% if (not i.even?) %></center> <br><br> <center>
+      <% end %>
+      <% i += 1 %>
+    <% end %>
+  </center> <br>
+  </p></center>
+
+
+
   <ul class="nav">
     <li><a href="#section1">1</a></li>
     <li><a href="#section2">2</a></li>
