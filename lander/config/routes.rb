@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'welcome/result'
   resources :contacts
   resources :forms
+#  get 'form' => 'welcome/result'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
