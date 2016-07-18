@@ -14,7 +14,7 @@ class FormsController < ApplicationController
   def create
     @form = Form.new(form_params)
     if @forum.save
-      
+      redirect_to welcome_result_path
     else
       
     end
@@ -22,6 +22,6 @@ class FormsController < ApplicationController
 
   private
   def form_params
-    params.require(:form).permit()
+    params.require(:form).permit(:types, :msgs, :targets)
   end
 end
