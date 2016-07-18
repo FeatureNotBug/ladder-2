@@ -1,7 +1,6 @@
 # Priority
 ## post-meeting
 - ladder person needs to get survey results in readable way w potential client is served that 15 minute call 
-- output notification
 - product onboarding process, but short version would be automatically get on phone, autoschedule someone for a call
 - process for ladder person to export the proper data field from FB campaign and input them into the product so that there is a standard report view in theproduct that not necessarily has to be fed by API but by csv
   - a todo for devs connection contact stuff
@@ -13,14 +12,12 @@
 
 ## still to-do
 - submit link from index to result page
+  - prefer result page to be render (since landing pages should be 1 page, but this is cosmetic)
 - thoughts on how to pass info:
-  - maybe add a "next" button and use renders (Will 1 page scroll work?  Need to add JS in header)
-  - or look into nested forms -> WILL TRY THIS FIRST
-  - "this is my brand" button wouldn't necessarily have to be part of a real form; could just be page redirection!
+  - currently putting that in form object
 - add in actual form (checkbox parts + require certain number checked) to generate random choices
   - don't generate all combos user chose for now
     - nvm I might have to
-  - FYI, radio button can be done by using still ck-button, but use radio_button_tag vs check_box_tag
 
 - moodboarding client side stuff
   - allows client some control over creative appearance
