@@ -49,8 +49,8 @@ div label input {
 
 body {
   background: #05091B;/*#000;*/
-  /*font-family: Georgia;*/
-  font-family: "Bernino Sans Condensed";
+  font-family: Georgia;
+ /* font-family: "Bernino Sans Condensed"; */
   font-size: 34px;
   /*font-style: italic;*/
   letter-spacing: -1px;
@@ -151,6 +151,7 @@ body {
 </head>
 
 <div class="section black" id="section1">
+<%= form_for(Form.new) do |f| %>
   <h2>What type of business are you?</h2>
   <center><p>
     <% i = 0 %>
@@ -171,7 +172,6 @@ body {
     <li>1</li>
     <li><a href="#section2">2</a></li>
     <li><a href="#section3">3</a></li>
-    <li><a href="#section4">4</a></li>
   </ul>
 </div>
 <div class="section white" id="section2">
@@ -196,7 +196,6 @@ body {
     <li><a href="#section1">1</a></li>
     <li>2</li>
     <li><a href="#section3">3</a></li>
-    <li><a href="#section4">4</a></li>
   </ul>
 </div>
 <div class="section black" id="section3">
@@ -223,24 +222,8 @@ body {
     <li><a href="#section1">1</a></li>
     <li><a href="#section2">2</a></li>
     <li>3</li>
-    <li><a href="#section4">4</a></li>
   </ul>
+
+<%= f.submit "Submit" %>
+<% end %>
 </div>
-
-<div class="section white" id="section4">
-  <h2>Results</h2>
-
-  <center><p>
-  </center> <br>
-  </p></center>
-
-
-
-  <ul class="nav">
-    <li><a href="#section1">1</a></li>
-    <li><a href="#section2">2</a></li>
-    <li><a href="#section3">3</a></li>
-    <li>4</li>
-  </ul>
-</div>
-
