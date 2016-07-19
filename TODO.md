@@ -35,7 +35,7 @@
                -> messages
                -> creatives
 
-- Add + Select Audience buttons
+- Select Audience buttons
 
 - Add Message + Select Message buttons
 

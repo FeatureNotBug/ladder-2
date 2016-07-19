@@ -1,12 +1,14 @@
 <p>AUDIENCE</p>
 <p>Add an audience</p>
 
+<div>
+  <% current_user.audiences.each do |aud| %>
+    <%= aud.title %><br>
+  <% end %>
+</div>
+
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#audModal">Add</button>
 
   <div><%= render partial: 'audiencesA_modal' %></div>
 
-<div>
-  <%= image_tag("audience.png") %>
-  <figcaption>Audience 1</figcaption>
-</div>

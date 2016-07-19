@@ -2,16 +2,16 @@ class AudiencesController < ApplicationController
   before_filter :authenticate_user!
 #  layout "special", except: [:index]
   def index
-    @Audiences = Audience.all
+    @audiences = Audience.all
   end
 
   def show
-    @Audience = Audience.find(params[:id])
+    @audience = Audience.find(params[:id])
   end
 
   def new
 #    @session[:campaign_id] ||= 1
-    @Audience = Audience.new
+    @audience = Audience.new
   end
 
   def create
