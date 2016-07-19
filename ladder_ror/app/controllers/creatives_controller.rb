@@ -19,7 +19,7 @@ class CreativesController < ApplicationController
   def destroy
     @creative = Creative.find(params[:id])
     @creative.destroy
-    redirect_to creatives_path, notice: The creative #{@creative.name} has been destroyed"
+    redirect_to creatives_path, notice: "The creative #{@creative.name} has been destroyed"
   end
 
   private
