@@ -1,1 +1,15 @@
 <p>MESSAGE</p>
+<p>Add a Message</p>
+
+<div>
+  <% current_user.messages.each do |message| %>
+    <%= message.msg %><br>
+  <% end %>
+</div>
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#msgModal">Add</button>
+
+  <div><%= render partial: 'messagesA_modal' %></div>
+
+
