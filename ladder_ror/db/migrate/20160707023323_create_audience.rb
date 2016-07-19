@@ -4,6 +4,7 @@ class CreateAudience < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.integer :campaign_id
+      t.integer :user_id
     end
   end
 end

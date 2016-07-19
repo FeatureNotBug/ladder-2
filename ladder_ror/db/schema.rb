@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160707182119) do
     t.string  "title"
     t.text    "description"
     t.integer "campaign_id"
+    t.integer "user_id"
   end
 
   create_table "campaigns", force: :cascade do |t|
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 20160707182119) do
   create_table "messages", force: :cascade do |t|
     t.text    "msg"
     t.integer "campaign_id"
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
