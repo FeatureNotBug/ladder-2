@@ -13,7 +13,7 @@ class FormsController < ApplicationController
 
   def create
     @form = Form.new(form_params)
-    if @forum.save
+    if @form.save
       redirect_to welcome_result_path
     else
       

@@ -158,7 +158,7 @@ body {
     <center>
     <% @identity_arr.each do |id| %>
       <div id="ck-button">
-        <label><%= radio_button_tag '@users_type[]', id %>
+        <label><%= radio_button_tag 'form[types][]', id %>
         <span><%= id %></span></label>
       </div>
       <% if (not i.even?) %></center> <br><br> <center>
@@ -182,7 +182,7 @@ body {
     <center>
     <% @message_arr.each do |msg| %>
       <div id="ck-button">
-        <label><%= check_box_tag '@users_messages[]', msg %>
+        <label><%= check_box_tag 'form[msgs][]', msg %>
         <span><%= msg %></span></label>
       </div>
       <% if (not i.even?) %></center> <br><br> <center>
@@ -206,7 +206,7 @@ body {
     <center>
     <% @audience_arr.each do |aud| %>
       <div id="ck-button">
-        <label><%= radio_button_tag '@users_audiences[]', aud %>
+        <label><%= radio_button_tag 'form[targets][]', aud %>
         <span><%= aud %></span></label>
       </div>
       <% if (not i.even?) %></center> <br><br> <center>
