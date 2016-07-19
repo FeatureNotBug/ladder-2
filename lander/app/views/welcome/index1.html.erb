@@ -206,7 +206,7 @@ body {
     <center>
     <% @audience_arr.each do |aud| %>
       <div id="ck-button">
-        <label><%= radio_button_tag 'form[targets][]', aud %>
+        <label><%= check_box_tag 'form[targets][]', aud %>
         <span><%= aud %></span></label>
       </div>
       <% if (not i.even?) %></center> <br><br> <center>
