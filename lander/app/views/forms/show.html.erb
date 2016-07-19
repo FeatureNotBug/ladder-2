@@ -1,0 +1,32 @@
+<h1>How well do you know your brand?</h1>
+<p>So this part would show what the user chose and show them a WHOLE NEW WORLD</p>
+<p>Presumably the designers and marketers will put something super awesome and catchy on this page</p>
+
+<h2>Verification that form was saved with its info:</h2>
+<%= @form.types %>
+<%= @form.targets %>
+<%= @form.msgs %>
+<br>
+<h2>Three other random things you could have chosen:</h2>
+<% trip = make_triplet(@audience_arr, @identity_arr, @message_arr) %>
+<%= trip.element1 %>
+<%= trip.element2 %>
+<%= trip.element3 %>
+<p> I'll want to make the above generator more intelligent so that the user doesn't get something he/she already entered.</p>
+
+<h2>Contact info section</h2>
+<%= form_for(Contact.new) do |f| %>
+  <div>
+  <%= f.email_field :email %>
+  <%= f.label("Email") %>
+  </div>
+
+  <div>
+  <%= f.url_field :website %>
+  <%= f.label("Website") %>
+  </div>
+
+  <br>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+<% end %>
+

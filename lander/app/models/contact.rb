@@ -12,6 +12,7 @@ class Contact < ActiveRecord::Base
         email_address: self.email,
         status: 'subscribed'
     })
-    Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
+    #Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
+    Rails.logger.info("An email has been sent to connect #{self.email} to Ladder Digital!") if result
   end
 end
