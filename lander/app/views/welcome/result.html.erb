@@ -1,8 +1,8 @@
 <h1>Why not all these other wonderful things??</h1>
 <p>So this part would show what the user chose and show them the WHOLE NEW WORLD they're missing out on (sorry not sorry :P)</p>
-<%= Form.find(11).types %>
-<%= Form.find(11).targets %>
-<%= Form.find(11).msgs %>
+<%= @form.types %>
+<%= @form.targets %>
+<%= @form.msgs %>
 <br>
 <p>Three other random things you could have chosen:</p>
 <% trip = make_triplet(@audience_arr, @identity_arr, @message_arr) %>

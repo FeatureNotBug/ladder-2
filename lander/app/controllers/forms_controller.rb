@@ -14,7 +14,8 @@ class FormsController < ApplicationController
   def create
     @form = Form.new(form_params)
     if @form.save
-      redirect_to welcome_result_path
+#      redirect_to welcome_result_path
+      redirect_to @form
     else
       
     end
