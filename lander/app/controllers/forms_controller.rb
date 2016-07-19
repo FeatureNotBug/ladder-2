@@ -22,6 +22,6 @@ class FormsController < ApplicationController
 
   private
   def form_params
-    params.require(:form).permit(:types, :msgs, :targets)
+    params.require(:form).permit(types:[], msgs:[], targets:[])
   end
 end
