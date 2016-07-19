@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   has_many :campaigns
   has_many :audiences
   has_many :messages
+  has_many :creatives
 end
