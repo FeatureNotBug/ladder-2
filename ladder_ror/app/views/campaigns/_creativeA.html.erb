@@ -1,8 +1,9 @@
 <p>CREATIVE</p>
 
 <div>
+  Current user is <%= current_user.id %><br>
   <% current_user.creatives.each do |creat| %>
-    Hello<%= creat.name %><br>
+    <%= link_to creat.name, creat.attachment_url %><br>
   <% end %>
 </div>
 

@@ -10,6 +10,9 @@ class CreativesController < ApplicationController
   def create
     @creative = Creative.new(creative_params)
     if @creative.save
+      Rails.logger.debug "current user is #{current_user}"
+      current_user.creatives << @creative
+
       redirect_to creatives_path, notice: "The creative #{@creative.name} has been saved"
     else
       render "new"
