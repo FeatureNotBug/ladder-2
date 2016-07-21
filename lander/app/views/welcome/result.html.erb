@@ -3,6 +3,11 @@
 <%= @form.types %>
 <%= @form.targets %>
 <%= @form.msgs %>
+<p>All combinations of above are:</p>
+<% allcombos = Array.new %>
+<% tempcombo = Array.new %>
+
+
 <br>
 <p>Three other random things you could have chosen:</p>
 <% trip = make_triplet(@audience_arr, @identity_arr, @message_arr) %>
