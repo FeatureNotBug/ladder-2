@@ -49,8 +49,7 @@ div label input {
 
 body {
   background: #05091B;/*#000;*/
-  font-family: Georgia;
- /* font-family: "Bernino Sans Condensed"; */
+  font-family: "Bernino Sans Condensed"; 
   font-size: 34px;
   /*font-style: italic;*/
   letter-spacing: -1px;
@@ -76,7 +75,7 @@ body {
 
 .section p {
   margin: 20px 0px 0px 50px;
-  width: 600px;
+  width: 1000px;
 }
 
 .black {
@@ -149,6 +148,14 @@ body {
   });
 </script>
 </head>
+
+<div class="section black" id="section-1">
+  <center><%= render partial: 'value' %></center>
+
+  <ul class="nav">
+    <li><a href="#section1">Tell Me More</a></li>
+  </ul>
+</div>
 
 <div class="section black" id="section1">
 <%= form_for Form.new do |f| %>
