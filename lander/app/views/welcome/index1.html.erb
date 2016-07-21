@@ -78,6 +78,12 @@ body {
   width: 1000px;
 }
 
+.intro {
+  color: #ff0066;
+  background: #e1e1ea
+/*url(http://i.imgur.com/pZWuILO.jpg) no-repeat top right;*/
+}
+
 .black {
   color: #fff;
   background: #05091B 
@@ -128,6 +134,23 @@ body {
   text-decoration: none;
   color: #05091B;/*#000;*/
 }
+
+.intro ul li {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  color: #aaa;
+}
+
+.intro ul li a {
+  display: block;
+  color: #99003d;
+}
+
+.intro ul li a:hover {
+  text-decoration: none;
+  color: #ff0066;
+}
   </style>
 
 <script>
@@ -149,7 +172,7 @@ body {
 </script>
 </head>
 
-<div class="section black" id="section-1">
+<div class="section intro" id="section-1">
   <center><%= render partial: 'value' %></center>
 
   <ul class="nav">
