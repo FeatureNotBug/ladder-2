@@ -32,6 +32,7 @@
                -> creatives
 
 - Select Audience/Message buttons
+  - something went horribly wrong with the modal..
 
 - add Creative object (is that an image file?)
   - if so, might think about using Paperclip or Carrierwave
