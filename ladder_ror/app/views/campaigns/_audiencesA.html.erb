@@ -3,9 +3,10 @@
 
 <div>
   <% current_user.audiences.each do |aud| %>
+    <%= aud.description %><br>
     <%= link_to aud.title, "#audSelectModal", :class => "btn", "data-toggle" => "modal" %><br>
+    <%= render partial: 'audsA_select_modal', locals: { chose_aud: aud} %>
   <% end %>
-  <%= render partial: 'audsA_select_modal' %>
 </div>
 
   <!-- Trigger the modal with a button -->

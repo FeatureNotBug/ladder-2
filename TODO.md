@@ -11,10 +11,6 @@
 - what I would like are the moodboarding items.
 
 ## still to-do
-- submit link from index to result page
-  - prefer result page to be render (since landing pages should be 1 page, but this is cosmetic)
-- thoughts on how to pass info:
-  - currently putting that in form object
 - add in actual form (checkbox parts + require certain number checked) to generate random choices
   - don't generate all combos user chose for now
     - nvm I might have to
