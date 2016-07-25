@@ -3,9 +3,9 @@
 
 <div>
   <% current_user.messages.each do |message| %>
-    <%= link_to message.msg, "#msgSelectModal", :class => "btn", "data-toggle" => "modal" %><br>
+    <%= link_to message.msg, "#msgSelectModal#{message.id}", :class => "btn", "data-toggle" => "modal" %><br>
+  <%= render partial: 'msgsA_select_modal', locals: { chose_msg: message} %>
   <% end %>
-  <%= render partial: 'msgsA_select_modal' %>
 </div>
 
   <!-- Trigger the modal with a button -->

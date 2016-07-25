@@ -1,5 +1,5 @@
   <!-- Modal -->
-  <div class="modal fade" id="msgSelectModal" role="dialog">
+  <div class="modal fade" id="<%= "msgSelectModal#{chose_msg.id}" %>" role="dialog">
     <div class="modal-dialog">
 
       <!-- Modal content-->
@@ -10,6 +10,9 @@
         </div>
         <div class="modal-body">
           <p>view modal stats.</p>
+          <p><%= chose_msg %></p>
+          <p><%= chose_msg.msg %></p>
+          <p><%= chose_msg.user_id %></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
