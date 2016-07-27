@@ -2,6 +2,7 @@
 <html>
 <head>
   <style type="text/css">
+/*
     body {
       font-family: Arial, Helvetical, sans-serif;
       padding-top: 20px;
@@ -15,6 +16,7 @@
       padding-right: 20px;
       padding-left: 20px;
     }
+*/
 
   </style>
   <title>Ladder Digital</title>
@@ -28,13 +30,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<!--
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
+-->
 
   <% if (user_signed_in?) then %> 
-    <div id="navbar">
+    <!--<div id="navbar" class="col-xs-1 side-nav">
       <%= render 'layouts/user_in'%>
-     </div>
+     </div>-->
   <% else %>
   <% end %>
 

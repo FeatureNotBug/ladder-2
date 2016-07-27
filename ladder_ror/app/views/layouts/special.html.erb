@@ -2,6 +2,7 @@
 <html>
 <head>
   <style type="text/css">
+/*
     body {
       font-family: Arial, Helvetical, sans-serif;
       padding-top: 20px;
@@ -15,6 +16,7 @@
       padding-right: 20px;
       padding-left: 20px;
     }
+*/
 
   </style>
   <title>Ladder Digital</title>
@@ -29,16 +31,21 @@
 </head>
 <body>
 
-<nav>
-  <%= link_to 'Home', root_path %> | 
-  <%= link_to 'Assets', campaigns_assets_path %> | 
-  <%= link_to 'Structure', campaigns_structure_path %> | 
-  <%= link_to 'Performance', campaigns_performance_path %>
-</nav>
-
-<h1>Viewing Campaign [Name to be put here]</h1>
+<div class="container-fluid">
+  <div class="row header">
+  </div>
+  <div class="row body">
+    <div id="navbar" class="col-xs-1 side-nav"><center>
+      <%= link_to image_tag('assets.png')+'Assets', campaigns_assets_path %> 
+      <%= link_to image_tag('structure.png')+'Structure', campaigns_structure_path %> 
+      <%= link_to image_tag('performance.png')+'Performance', campaigns_performance_path %>
+      <div class="home-link"><%= link_to image_tag('home.png')+'Home', root_path %></div> 
+    </center></div>
+    <h1>Viewing Campaign [Name to be put here]</h1>
 <!-- Campaign.find(session[:campaign_id]).name -->
-<%= yield %>
+    <%= yield %>
+  </div>
+</div>
 
 </body>
 </html>

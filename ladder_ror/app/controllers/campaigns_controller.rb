@@ -1,6 +1,6 @@
 class CampaignsController < ApplicationController
   #before_filter :authenticate_user!
-  layout "special", except: [:index]
+#  layout "special", except: [:index]
   def index
     @campaigns = Campaign.all
   end
