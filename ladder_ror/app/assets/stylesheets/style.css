@@ -1,0 +1,219 @@
+body	{
+	font-family: "BerninoSansCondensed";
+}
+/**MAIN LAY-OUT**/
+.header	{
+	background: #171b2f;
+	height: 30px;
+
+}
+
+.body	{
+	height: 600px;
+	background: #e6e7ef;
+}
+
+.side-nav	{
+	background: #171b2f;
+	height: 100%;
+	padding-top: 1px;
+}
+
+
+/**SIDE MENU**/
+
+.side-links	{
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	margin: 10px 0 15px 0;
+	text-align: center;
+	font-size: 0.7em;
+	letter-spacing: -0.1px;
+	color: #9498ae;
+}
+
+.home-link{
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	margin: 300px 0 0 0;
+	text-align: center;
+	font-size: 0.7em;
+	letter-spacing: -0.1px;
+	color: #9498ae;
+
+}
+
+
+
+/**HOME PAGE**/
+
+.portal-box	{
+	background: #f1f2f7;  
+	display: block;
+	width: 95%;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 80px;
+	padding: 1px;
+	text-align: center;
+
+}
+
+.home-menu	{
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.left-container	{
+	background: white;
+	display: block;
+	width: 300px;
+	height: 300px;
+	float: left;
+
+
+}
+
+.right-container	{
+	background: #e6e7ef;
+	display: block;
+	width: 300px;
+	height: 300px;
+	float: right;
+}
+
+/**ASSETS**/
+
+
+.top-menu	{
+
+
+}
+
+.portal-nav	{
+	margin-top: 20px;
+
+
+}
+
+.content-boxes	{
+
+	background: white;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin-top: 100px;
+
+}
+
+.message-boxes	{
+
+	background: white;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+
+}
+
+.headline-box	{
+
+	background: #e6e7ef;
+	display: block;
+	width: 90%;
+	height: 70px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.message-box	{
+
+	background: #e6e7ef;
+	display: block;
+	width: 90%;
+	height: 70px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.settings	{
+
+	max-width: 20px;
+	float: right;
+}
+
+.creative-boxes	{
+
+	background: white;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+}
+
+.creative	{
+
+	display: block;
+}
+
+.portal-box2	{
+	background: #f1f2f7;  
+	display: block;
+	width: 95%;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 1px;
+	text-align: center;
+}
+
+
+
+/**STRUCTURE**/
+
+.left-col	{
+
+	background: grey; 
+	display: block;
+	float: left;
+	width: 600px;
+	height: 300px;
+
+}
+
+.right-col	{
+
+	background: blue;
+	display: block;
+	float: right;
+	width: 300px;
+	height: 300px;
+
+}	
+
+.left-content	{
+
+	background: white;
+	display: block;
+	float: left;
+	width: 250px;
+	height: 250px;
+}
+
+.right-content	{
+
+	background: white;
+	display: block;
+	float: rights;
+	width: 250px;
+	height: 250px;
+}
+
+
+/**PERFORMANCE**/
