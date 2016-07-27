@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row header">
+  </div>
+  <div class="row body">
+    <div id="navbar" class="col-xs-1 side-nav"><center>
+      <%= link_to image_tag('assets.png')+'Assets', campaigns_assets_path %> 
+      <%= link_to image_tag('structure.png')+'Structure', campaigns_structure_path %> 
+      <%= link_to image_tag('performance.png')+'Performance', campaigns_performance_path %>
+      <div class="home-link"><%= link_to image_tag('home.png')+'Home', root_path %></div> 
+    </center></div>
+    <h1>Viewing Campaign</h1>
+    <%= yield %>
