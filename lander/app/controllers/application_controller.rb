@@ -26,32 +26,28 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def triplet_included_in(test_triplet, array_of_triplets)
+    array_of_triplets.each do |triplet|
+      if triplet.equal_to(test_triplet)
+        return true
+      else
+        return false
+      end
+    end
+  end
+
   def choose_random(arr)
     arr.sample #yes this is simple but I'll leave it here for now
   end
 
-  def make_triplet(arr1, arr2, arr3)
-    chose1 = choose_random(arr1)
-    chose2 = choose_random(arr2)
-    chose3 = choose_random(arr3)
+  def make_triplet(e1, e2, e3)
+#  def make_triplet(arr1, arr2, arr3)
+#    chose1 = choose_random(arr1)
+#    chose2 = choose_random(arr2)
+#    chose3 = choose_random(arr3)
     triplet = Triplet.new()
-    triplet.init_with(chose1, chose2, chose3)
+    triplet.init_with(e1, e2, e3)
     return triplet
-  end
-
-  # try to choose w/no exact triplet repeats?
-  def generate_combos(n, item1, item2, item3, u1, u2, u3)
-    used = []
-    success = 0
-    while (success < n)
-      new_triplet = make_triplet(item1, item2, item3)
-      if (triplet_included(new_triplet, used))
-        # do nothing
-      else
-        success += 1
-        used.push(new_triplet)
-      end
-    end
   end
 
   before_filter :set_arrays
