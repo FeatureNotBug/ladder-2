@@ -21,6 +21,10 @@ class FormsController < ApplicationController
     end
   end
 
+  def combos
+    @form.types.product(@form.msgs, @form.targets)
+  end
+
   private
   def form_params
     params.require(:form).permit(types:[], msgs:[], targets:[])

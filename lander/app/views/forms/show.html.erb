@@ -7,12 +7,19 @@
 <%= @form.targets %>
 <%= @form.msgs %>
 <br>
-<h2>Three other random things you could have chosen:</h2>
+<h2>Which of these are you actually?</h2>
+<% blah = combos(@form.types ,@form.targets, @form.msgs) %>
+<%= blah.sample %>
+<%= blah.sample %>
+<%= blah.sample %>
+
+<!--
 <% trip = make_triplet(@audience_arr, @identity_arr, @message_arr) %>
 <%= trip.element1 %>
 <%= trip.element2 %>
 <%= trip.element3 %>
-<p> I'll want to make the above generator more intelligent so that the user doesn't get something he/she already entered.</p>
+-->
+<p> if generating many of above, will want to make sure not same one selected each time </p>
 
 <h2>Contact info section</h2>
 <%= form_for(Contact.new) do |f| %>

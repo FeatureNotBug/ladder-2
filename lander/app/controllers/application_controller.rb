@@ -26,16 +26,6 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def triplet_included_in(test_triplet, array_of_triplets)
-    array_of_triplets.each do |triplet|
-      if triplet.equal_to(test_triplet)
-        return true
-      else
-        return false
-      end
-    end
-  end
-
   def choose_random(arr)
     arr.sample #yes this is simple but I'll leave it here for now
   end
