@@ -4,13 +4,18 @@
 
 <p>find me in ladder_ror/app/views/campaigns</p>
 
-
-<div class="container">
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#audiencesA">Audiences</a></li>
-    <li><a data-toggle="tab" href="#messagesA">Messages</a></li>
-    <li><a data-toggle="tab" href="#creativeA">Creative</a></li>
-  </ul>
+<div class="top-menu">
+	<ul class="nav nav-pills" role="tablist">
+    		<li role="presentation">
+                            <a data-toggle="pill" role="tab" href="#creativeA">Creatives</a>
+    		</li>
+   			<li role="presentation">
+                            <a data-toggle="pill" role="tab" href="#messagesA">Messages</a>
+   			</li>
+    		<li role="presentation" class="active">
+                            <a data-toggle="pill" role="tab" href="#audiencesA">Audiences</a>
+    		</li>
+  	</ul>
 
   <div class="tab-content">
     <div id="audiencesA" class="tab-pane fade in active">
@@ -23,5 +28,5 @@
       <%= render 'creativeA' %>
     </div>
   </div>
-</div>
+ </div> 
 </div></div>

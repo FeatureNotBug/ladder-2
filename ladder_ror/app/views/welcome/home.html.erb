@@ -1,3 +1,21 @@
+<% if (not user_signed_in?) then %>
+
+<div class="container-fluid">
+  <div class="row header">
+    <div align="right" style="padding-right:5px">LOGOUT</div>
+  </div>
+  <div class="row body">
+    <div id="navbar" class="col-xs-1 side-nav"><center>
+      <%= image_tag('assets.png')+'Assets' %>
+      <%= image_tag('structure.png')+'Structure' %>
+      <%= image_tag('performance.png')+'Performance' %>
+      <div class="home-link"><%= image_tag('home.png')+'Home' %></div> 
+    </center></div>
+	<div class="col-xs-11 portal">
+
+  <h1><%= link_to "LOG IN", new_user_session_path %> or <%= link_to "SIGN UP", new_user_registration_path %></h1>
+<% else %>
+
 <div class="container-fluid">
   <div class="row header">
     <div align="right" style="padding-right:5px"><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></div>
@@ -10,10 +28,7 @@
       <div class="home-link"><%= link_to image_tag('home.png')+'Home', root_path %></div> 
     </center></div>
 	<div class="col-xs-11 portal">
-<h1>The Homepage Will Be Here</h1>
-<% if (not user_signed_in?) then %>
-  <%= link_to "LOG IN", new_user_session_path %> or <%= link_to "SIGN UP", new_user_registration_path %>
-<% else %>
+
 <!--
   <h2>Welcome</h2>
   <p>Your campaigns:</p>
@@ -29,7 +44,7 @@
       <%= f.submit "Create", class: "btn btn-primary" %>
     <% end %>
   </div>
-<% end %>
+
 -->
 		<div class="portal-box">
 			<div class="home-menu">
@@ -42,3 +57,4 @@
 
   </div>
 </div>
+<% end %>
