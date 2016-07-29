@@ -13,10 +13,12 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    if @contact.save
-      redirect_to root_path,  :notice => "Your contact information was successfully entered."
+    if @contact.valid? 
+      @contact.subscribe
+#    if @contact.save
+      redirect_to contacts_path,  :notice => "Your contact information was successfully entered."
     else
-      render "new"
+      render :new
     end
   end
 
