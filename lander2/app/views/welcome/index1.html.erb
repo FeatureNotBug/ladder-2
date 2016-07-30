@@ -1,0 +1,266 @@
+<head>
+  <style type="text/css">
+
+div label input {
+   margin-right:100px;
+}
+
+#ck-button {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#ck-button:hover {
+    background:red;
+}
+
+#ck-button label {
+    float:left;
+    width:8.0em;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#ck-button input:checked + span {
+    background-color:#911;
+    color:#fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #05091B;/*#000;*/
+  font-size: 34px;
+  /*font-style: italic;*/
+  letter-spacing: -1px;
+  width: 20000px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.section {
+  margin: 0px;
+  bottom: 0px;
+  width: 4000px;
+  float: left;
+  height: 100%;
+  text-shadow: 1px 1px 2px #f0f0f0;
+}
+
+.section h2 {
+  margin: 50px 0px 30px 50px;
+}
+
+.section p {
+  margin: 20px 0px 0px 50px;
+  width: 1000px;
+}
+
+.intro {
+  color: #ff0066;
+  background: #e1e1ea
+/*url(http://i.imgur.com/pZWuILO.jpg) no-repeat top right;*/
+}
+
+.black {
+  color: #fff;
+  background: #05091B 
+/*url(http://i.imgur.com/pZWuILO.jpg) no-repeat top right;*/
+}
+
+.white {
+  color: #05091B;/*#000;*/
+  background: #fff 
+/*url(http://i.imgur.com/LVp6aFC.jpg) no-repeat top right;*/
+}
+
+.section ul {
+  list-style: none;
+  margin:20px 0px 0px 550px;
+}
+
+.black ul li {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  color: #aaa;
+}
+
+.black ul li a {
+  display: block;
+  color: #f0f0f0;
+}
+
+.black ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.white ul li {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  color: #aaa;
+}
+
+.white ul li a {
+  display: block;
+  color: #222;
+}
+
+.white ul li a:hover {
+  text-decoration: none;
+  color: #05091B;/*#000;*/
+}
+
+.intro ul li {
+  float: center;
+  padding: 5px;
+  margin: 5px;
+  color: #aaa;
+}
+
+.intro ul li a {
+  display: block;
+  color: #99003d;
+}
+
+.intro ul li a:hover {
+  text-decoration: none;
+  color: #ff0066;
+}
+  </style>
+
+<script>
+  $(function() {
+    $('ul.nav a').bind('click', function(event) {
+      var $anchor = $(this);
+      /*
+      if you want to use one of the easing effects:
+      $('html, body').stop().animate({
+          scrollLeft: $($anchor.attr('href')).offset().left
+      }, 1500,'easeInOutExpo');
+       */
+      $('html, body').stop().animate({
+        scrollLeft: $($anchor.attr('href')).offset().left
+      }, 1000);
+      event.preventDefault();
+    });
+  });
+</script>
+</head>
+
+<div class="section intro" id="sectionX">
+   <%= render partial: 'value' %>
+
+  <ul class="nav">
+    <li><a href="#sectionY">Tell Me More</a></li></center>
+  </ul>
+</div>
+
+<div class="section intro" id="sectionY">
+   <%= render partial: 'features' %>
+
+  <ul class="nav">
+    <li><a href="#section1">Get Started</a></li></center>
+  </ul>
+</div>
+
+<div class="section black" id="section1">
+<%= form_for Form.new do |f| %>
+  <h2>What type of business are you?</h2>
+  <center><p>
+    <% i = 0 %>
+    <center>
+    <% @identity_arr.each do |id| %>
+      <div id="ck-button">
+        <label><%= radio_button_tag 'form[types][]', id %>
+        <span><%= id %></span></label>
+      </div>
+      <% if (not i.even?) %></center> <br><br> <center>
+      <% end %>
+      <% i += 1 %>
+    <% end %> 
+  </center> <br>
+  </p></center>
+
+  <ul class="nav">
+    <li>1</li>
+    <li><a href="#section2">2</a></li>
+    <li><a href="#section3">3</a></li>
+  </ul>
+</div>
+<div class="section white" id="section2">
+  <h2>Which values define your business?</h2>
+
+  <center><p>
+    <% i = 0 %>
+    <center>
+    <% @message_arr.each do |msg| %>
+      <div id="ck-button">
+        <label><%= check_box_tag 'form[msgs][]', msg %>
+        <span><%= msg %></span></label>
+      </div>
+      <% if (not i.even?) %></center> <br><br> <center>
+      <% end %>
+      <% i += 1 %>
+    <% end %>
+  </center> <br>
+  </p></center>
+
+  <ul class="nav">
+    <li><a href="#section1">1</a></li>
+    <li>2</li>
+    <li><a href="#section3">3</a></li>
+  </ul>
+</div>
+<div class="section black" id="section3">
+  <h2>Which audiences are you targetting?</h2>
+
+  <center><p>
+    <% i = 0 %>
+    <center>
+    <% @audience_arr.each do |aud| %>
+      <div id="ck-button">
+        <label><%= check_box_tag 'form[targets][]', aud %>
+        <span><%= aud %></span></label>
+      </div>
+      <% if (not i.even?) %></center> <br><br> <center>
+      <% end %>
+      <% i += 1 %>
+    <% end %>
+  </center> <br>
+  </p></center>
+
+
+
+  <ul class="nav">
+    <li><a href="#section1">1</a></li>
+    <li><a href="#section2">2</a></li>
+    <li>3</li>
+  </ul>
+
+<%= f.submit "Submit" %>
+<% end %>
+</div>

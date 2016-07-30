@@ -1,0 +1,152 @@
+<head>
+<style type="text/css">
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* .button */
+
+.button {
+    display: inline-block;
+    position: relative;
+/*    margin: 1em;
+    padding: 0.67em;*/
+    border: 2px solid #FFF;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 1em;
+    outline: none;
+    color: #FFF;
+    background: transparent;
+}
+
+.button span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.button:before,
+.button:after {
+    content: '';
+    position: absolute;
+    top: 0.67em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+/* :before */
+
+.button:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+/* :after */
+
+.button:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%,0);
+    -moz-transform: translate(150%,0);
+    -ms-transform: translate(150%,0);
+    -o-transform: translate(150%,0);
+    transform: translate(150%,0);
+}
+
+/* Span on :hover and :active */
+
+.button:hover span,
+.button:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+.button:hover:before,
+.button:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+/* 
+  We hide :before pseudo-element on :active
+*/
+
+.button:active:before {
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+table, th, td { 
+    width: 30%; 
+border: 1px solid black;
+}
+
+td { 
+    width: 33%; 
+    height: 50%;
+}
+</style>
+</head>
+
+<h1>Explore Our Features</h1>
+
+<div>
+<table>
+  <tr>
+    <td><button class="button" type="button" data-hover="We utilize our proprietary data­-driven technology to help brands stand out from the clutter. With Performance Branding you can gain a deep understanding of your brand’s performance and opportunities through data points."><span>Understand your brand through data-driven strategies</span></button></td> 
+    <td><button class="button" type="button" data-hover="We provide a testing process that explores potential target markets for your brand. The metrics and data generated through these tests is designed to help you identify optimal target audiences for your brand."><span>Discover your target audience</span></button></td>
+    <td><button class="button" type="button" data-hover="HELP THIS ONE IS INCOMPLETE"><span>Stand out amongst your competitors</span></button></td> 
+  </tr>
+  <tr>
+    <td><button class="button" type="button" data-hover="It is our goal to not only help brands maximize their positioning in the market, but to also to provide quantifiable data points to guide your branding and marketing strategies across all
+channels."><span>Brand realization across all channels</span></button></td> 
+    <td><button class="button" type="button" data-hover="Performance Branding is also about saving you valuable time and money by reducing potential creative waste. Our process helps build brand awareness through rigorous testing. This testing first principle is optimized to give you immediate data to select the best audiences,
+messages, and images to optimize your branding campaigns."><span>Reduce creative waste</span></button></td>
+    <td><button class="button" type="button" data-hover="Generate inquiries and drive qualified traffic to your brand using our latest real–time technology.
+With all the different type of messaging in today’s world, we want to make sure that your branding and marketing efforts capture the attention of a precise and clearly defined target."><span>Drive inquiries using latest technology</span></button></td> 
+  </tr>
+</table>
+</div>

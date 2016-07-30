@@ -1,0 +1,14 @@
+<h1>Welcome page in which stuffs can be done.</h1>
+<!--
+<%= render partial: "choose_identity" %>
+<%= render partial: "choose_msg" %>
+<%= render partial: "choose_audience" %>
+-->
+
+<%= form_tag(welcome_result_path, method: "get") do %>
+  <%= render partial: "choose_identity" %><br>
+  <%= render partial: "choose_msg" %><br>
+  <%= render partial: "choose_audience" %><br>
+  <%= submit_tag("That's My Brand!") %>
+<% end %>
+

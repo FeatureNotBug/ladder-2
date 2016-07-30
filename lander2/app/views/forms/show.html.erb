@@ -1,0 +1,53 @@
+<h1>How well do you know your brand?</h1>
+<p>Something super awesome and catchy will be on this page</p>
+
+<h2>You chose:</h2>
+<%= @form.types %>
+<%= @form.targets %>
+<%= @form.msgs %>
+<br>
+<h2>But which of these are you actually?</h2>
+<% blah = @form.types.product(@form.msgs, @form.targets) %>
+<% success = 0 %>
+<% fail = 0 %>
+<% used = [] %>
+<% i = 0 %>
+<% while success < 3 %>
+  <% i = i + 1 %>
+  <% test = blah.sample %>
+  <% used.each do |used_triplet| %>
+    <% if (used_triplet[0] == test[0] && used_triplet[1] == test[1] && used_triplet[2] == test[2]) %>
+      <% fail += 1 %>
+    <% end %>
+  <% end %>
+  <% if fail == 0 %>
+    <% success += 1 %>
+    <% used << test %>
+  <% end %>
+<% end %>
+<br>
+<%= used %>
+<!--
+<% trip = make_triplet(@audience_arr, @identity_arr, @message_arr) %>
+<%= trip.element1 %>
+<%= trip.element2 %>
+<%= trip.element3 %>
+-->
+<p> if generating many of above, will want to make sure not same one selected each time </p>
+
+<h2>Contact info section</h2>
+<%= form_for(Contact.new) do |f| %>
+  <div>
+  <%= f.email_field :email %>
+  <%= f.label("Email") %>
+  </div>
+
+  <div>
+  <%= f.url_field :website %>
+  <%= f.label("Website") %>
+  </div>
+
+  <br>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+<% end %>
+
