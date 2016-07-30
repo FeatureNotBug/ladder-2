@@ -10,6 +10,7 @@ class Contact < ActiveRecord::Base
     result = mailchimp.lists(list_id).members.create(
       body: {
         email_address: self.email,
+        merge_fields: {SITE: self.website},
         status: 'pending'
     })
     #Rails.logger.info("Subscribed #{self.email} to MailChimp") if result

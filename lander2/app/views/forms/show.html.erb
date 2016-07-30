@@ -38,12 +38,12 @@
 <h2>Contact info section</h2>
 <%= form_for(Contact.new) do |f| %>
   <div>
-  <%= f.email_field :email %>
+  <%= f.email_field :email, required: true %>
   <%= f.label("Email") %>
   </div>
 
   <div>
-  <%= f.url_field :website %>
+  <%= f.url_field :website, required: true %>
   <%= f.label("Website") %>
   </div>
 
