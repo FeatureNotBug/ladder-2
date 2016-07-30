@@ -16,7 +16,8 @@ class ContactsController < ApplicationController
     if @contact.valid? 
       @contact.subscribe
 #    if @contact.save
-      redirect_to contact_path,  :notice => "Your contact information was successfully entered."
+#      redirect_to contact_path,  :notice => "Your contact information was successfully entered."
+      redirect_to welcome_thanks_path,  :notice => "Your contact information was successfully entered."
     else
       render :new
     end

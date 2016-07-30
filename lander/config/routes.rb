@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 #  root 'welcome#index'
   root 'welcome#index1'
   get 'welcome/result'
+  get 'welcome/thanks'
   resources :contacts#, only: [:new, :create]
   get 'contact' => 'contacts#show'
   resources :forms
