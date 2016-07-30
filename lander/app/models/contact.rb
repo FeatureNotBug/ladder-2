@@ -10,7 +10,7 @@ class Contact < ActiveRecord::Base
     result = mailchimp.lists(list_id).members.create(
       body: {
         email_address: self.email,
-        status: 'subscribed'
+        status: 'pending'
     })
     #Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
     Rails.logger.info("An email has been sent to connect #{self.email} to Ladder Digital!") if result
