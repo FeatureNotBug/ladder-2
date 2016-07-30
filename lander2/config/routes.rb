@@ -5,10 +5,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-#  root 'welcome#index'
-  root 'welcome#index1'
+  root 'welcome#index'
+#  root 'welcome#index1'
   get 'welcome/result'
   get 'welcome/thanks'
+  get 'welcome/survey'
   resources :contacts#, only: [:new, :create]
   get 'contact' => 'contacts#show'
   resources :forms
