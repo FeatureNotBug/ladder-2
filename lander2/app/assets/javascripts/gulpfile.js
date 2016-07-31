@@ -67,6 +67,7 @@ gulp.task('jquery', function() {
 })
 
 // Copy Font Awesome core files from node_modules to vendor directory
+/*
 gulp.task('fontawesome', function() {
     return gulp.src([
             'node_modules/font-awesome/**',
@@ -78,6 +79,7 @@ gulp.task('fontawesome', function() {
         ])
         .pipe(gulp.dest('vendor/font-awesome'))
 })
+*/
 
 // Copy all third party dependencies from node_modules to vendor directory
 gulp.task('copy', ['bootstrap', 'jquery', 'fontawesome']);

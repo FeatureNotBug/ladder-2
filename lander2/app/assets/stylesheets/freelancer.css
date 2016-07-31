@@ -1,6 +1,6 @@
 @font-face {
 font-family: 'BerninoSansCondensed';
-src: url('fonts/Bernino.otf'); 
+src: url('fonts/Bernino.eot'); 
 
 }
 
@@ -58,7 +58,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #ff0052;
+  background-color: #18BC9C;
   color: white;
 }
 hr.star-primary {
@@ -165,9 +165,9 @@ padding: 2px 15px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #ff0052;
+  background-color: #18BC9C;
   color: white;
-  border-color: #ff0052;
+  border-color: #18BC9C;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -322,7 +322,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #ff0052;
+  color: #18BC9C;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -356,7 +356,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #ff0052;
+  color: #18BC9C;
   background: white;
   border: solid 2px white;
 }
@@ -404,8 +404,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #ff0052;
-  border-color: #ff0052;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -437,11 +437,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #ff0052;
-  border-color: #ff0052;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
 }
 .btn-success .badge {
-  color: #ff0052;
+  color: #18BC9C;
   background-color: white;
 }
 .btn-social {
@@ -604,11 +604,6 @@ margin-top: 50px;
   color: black;
 }
 
-
-
-
-
-
 .surveyQs {
   display: block;
   width: 300px;
@@ -620,7 +615,105 @@ margin-top: 50px;
   font-size: 1.3em;
 }
 
+.surveyQs2  {
+  opacity: 0.8;
+  color: #fff;
+}
 
-.surveQs  {
-  
+.surveyQs2:hover  {
+  opacity: 1;
+}
+
+
+
+.q1 {
+    height: 100px;
+    min-width: 200px;
+  background: url(fun.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.q2 {
+    height: 100px;
+    min-width: 200px;
+  background: url(passion.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
+.q3 {
+    height: 100px;
+    min-width: 200px;
+  background: url(quality.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.q4 {
+    height: 100px;
+    min-width: 200px;
+    background: url(power.png);
+    background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.q5{
+    height: 100px;
+    min-width: 200px;
+    background: url(efficiency.png);
+    background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.q6{
+    height: 100px;
+    min-width: 200px;
+    background: url(value.png);
+    background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.q7 {
+    height: 100px;
+    min-width: 200px;
+    background: url(authenticity.png);
+    background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.q8 {
+    height: 100px;
+    min-width: 200px;
+    background: url(ease.png);
+    background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.q9 {
+    height: 100px;
+    min-width: 200px;
+    background: url(trust.png);
+    background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+
 }
