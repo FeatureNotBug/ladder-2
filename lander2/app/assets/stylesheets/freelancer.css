@@ -1,6 +1,6 @@
 @font-face {
-font-family: 'lovelyFont';
-src: url('fonts/Bernino.eot'); 
+font-family: 'BerninoSansCondensed';
+src: url('fonts/Bernino.otf'); 
 
 }
 
@@ -22,7 +22,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #ff0052;
   outline: none;
 }
 h1,
@@ -58,7 +58,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: #ff0052;
   color: white;
 }
 hr.star-primary {
@@ -165,9 +165,9 @@ padding: 2px 15px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: #ff0052;
   color: white;
-  border-color: #18BC9C;
+  border-color: #ff0052;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -322,7 +322,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  color: #ff0052;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -356,7 +356,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18BC9C;
+  color: #ff0052;
   background: white;
   border: solid 2px white;
 }
@@ -404,8 +404,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: #ff0052;
+  border-color: #ff0052;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -437,11 +437,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: #ff0052;
+  border-color: #ff0052;
 }
 .btn-success .badge {
-  color: #18BC9C;
+  color: #ff0052;
   background-color: white;
 }
 .btn-social {

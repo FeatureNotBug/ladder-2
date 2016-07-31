@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require freelancer
+//= require jqBootstrapValidation
+//= require contact_me
+//= require gulpfile
+//= require jquery
 //= require_tree .
