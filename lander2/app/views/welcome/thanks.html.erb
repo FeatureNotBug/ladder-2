@@ -15,7 +15,6 @@
     <link href="<%= asset_path('freelancer.css') %>" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -48,10 +47,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">ABOUT</a>
+                        <a href="http://www.performance-branding.ghost.io">BLOG</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">GET IN TOUCH</a>
+                        <%= link_to 'GET IN TOUCH', new_contact_path %>
                     </li>
                 </ul>
             </div>

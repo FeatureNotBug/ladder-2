@@ -69,34 +69,7 @@
         <div class="row emailForm"> 
 
         <div class="col-sm-12">
-        <h2>Thank you for taking our assessment!<br><br>Speak to a strategist now.</h2>
-<p>Your brand is composed of many things.  You chose...<br>
-<%= @form.types %>
-<%= @form.targets %>
-<%= @form.msgs %>
-</p>
-<p>But which combination will represent you most accurately?  You might be any of these....<br>
-<% blah = @form.types.product(@form.msgs, @form.targets) %>
-<% success = 0 %>
-<% fail = 0 %>
-<% used = [] %>
-<% i = 0 %>
-<% while success < 3 %>
-  <% i = i + 1 %>
-  <% test = blah.sample %>
-  <% used.each do |used_triplet| %>
-    <% if (used_triplet[0] == test[0] && used_triplet[1] == test[1] && used_triplet[2] == test[2]) %>
-      <% fail += 1 %>
-    <% end %>
-  <% end %>
-  <% if fail == 0 %>
-    <% success += 1 %>
-    <% used << test %>
-  <% end %>
-<% end %>
-<br>
-<%= used %>
-</p>
+        <h2>Thank you for your interest!<br><br>Speak to a strategist now.</h2>
             <div class="col-xs-12" style="margin-top: 40px;">
 <%= form_for(Contact.new) do |f| %>
   <div>
