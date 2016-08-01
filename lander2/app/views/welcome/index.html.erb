@@ -106,6 +106,7 @@ through data-driven testing</h1> </span>
 
     <!-- About Section -->
     <section class="success" id="about">
+        <%= javascript_include_tag "bootstrap-collapse.js" %>
         <div class="container">
             <div class="row panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
@@ -135,7 +136,7 @@ through data-driven testing</h1> </span>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
+      <div class="panel-body" style="color: black;">
         We provide a testing process that explores potential target markets for your brand. The metrics and data generated through these tests is designed to help you identify optimal target audiences for your brand. 
       </div>
     </div>
@@ -150,7 +151,7 @@ through data-driven testing</h1> </span>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
+      <div class="panel-body" style="color: black;">
         Knowing how to utilize data to best position your brand within the dense and ever changing marketplace with give you a competitive edge. This means that...
       </div>
     </div>
@@ -185,7 +186,7 @@ through data-driven testing</h1> </span>
       </h4>
     </div>
     <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
+      <div class="panel-body" style="color: black;">
        Performance Branding is also about saving you valuable time and money by reducing potential creative waste. Our process helps build brand awareness through rigorous testing. This testing first principle is optimized to give you immediate data to select the best audiences, messages, and images to optimize your branding campaigns.
       </div>
     </div>
@@ -200,7 +201,7 @@ through data-driven testing</h1> </span>
       </h4>
     </div>
     <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-      <div class="panel-body">
+      <div class="panel-body" style="color: black;">
         Generate inquiries and drive qualified traffic to your brand using our latest real–time technology. With all the different type of messaging in today’s world, we want to make sure that your branding and marketing efforts capture the attention of a precise and clearly defined target.
       </div>
     </div>
@@ -257,7 +258,7 @@ through data-driven testing</h1> </span>
 
     <div><%= render partial: "survey3" %>
 
-<div><%= f.submit "Submit Brand Qualities" %></div>
+<div><%= f.submit "SUBMIT BRAND TRAITS", class: "btn btn-default field" %></div>
 <% end %>
 </div>
     <!-- Footer -->
