@@ -1,19 +1,23 @@
 # Priority
+## Landing page
+- change API key, list to Ladder's
+- get features section from Simon, re-link all navbars appropriately (could probably go into application.html.erb)
+- send Ladder an email upon subscription add field, maybe?
+  - add merge field
+  - give contact a form
+  - give contact the stats on what options they chose and what options were generated (that led to their subscription)
+- require fields (3 checkboxes, etc)
+
 ## post-meeting
 - ladder person needs to get survey results in readable way w potential client is served that 15 minute call 
 - product onboarding process, but short version would be automatically get on phone, autoschedule someone for a call
 - process for ladder person to export the proper data field from FB campaign and input them into the product so that there is a standard report view in the product that not necessarily has to be fed by API but by csv
-  - a todo for devs connection contact stuff
 - standardize reporting export import workflow
 
 ## maybe
 - only allow 3-5 msgs chosen, all audiences can be chosen, think about business type too
-- Other reminders for myself:
-  - maybe add an allcombos attribute to each form, so that I can access all the combos and make life a little easier for myself?? (It does seem a bit wasteful, but at the same time, would only need to do a calculation once)
 
 ## still to-do
-- add in actual form (checkbox parts + require certain number checked) to generate random choices
-
 - moodboarding client side stuff
   - allows client some control over creative appearance
     - would that be another tab (can control from cancan)
