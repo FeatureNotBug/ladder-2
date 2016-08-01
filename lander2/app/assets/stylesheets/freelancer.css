@@ -224,14 +224,8 @@ section.success {
 
 .graphics  {
   display: block;
-  max-width: 150px;
-  height: 150px;
   margin: 0 auto;
   margin-top: 50px;
-  padding-top: 60px;
-  border: 2px solid #ff0052;
-  border-radius: 75px;
-  color: #ff0052;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -577,6 +571,7 @@ fieldset[disabled] .btn-success.active {
 .text   {
 
   color: #fff;
+  line-height: 1.5em;
 }
 
 .inner  {
@@ -604,6 +599,7 @@ margin-top: 50px;
   color: black;
 }
 
+
 .surveyQs {
   display: block;
   width: 300px;
@@ -618,17 +614,15 @@ margin-top: 50px;
 .surveyQs2  {
   opacity: 0.8;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .surveyQs2:hover  {
   opacity: 1;
 }
 
-
-
 .q1 {
-    height: 100px;
-    min-width: 200px;
   background: url(fun.png);
   background-size: cover;
   background-position: center;
@@ -637,8 +631,6 @@ margin-top: 50px;
 }
 
 .q2 {
-    height: 100px;
-    min-width: 200px;
   background: url(passion.png);
   background-size: cover;
   background-position: center;
@@ -648,8 +640,6 @@ margin-top: 50px;
 }
 
 .q3 {
-    height: 100px;
-    min-width: 200px;
   background: url(quality.png);
   background-size: cover;
   background-position: center;
@@ -658,18 +648,14 @@ margin-top: 50px;
 }
 
 .q4 {
-    height: 100px;
-    min-width: 200px;
     background: url(power.png);
     background-size: cover;
-  background-position: center;
+  background-position: bottom;
     background-repeat: no-repeat;
 
 }
 
 .q5{
-    height: 100px;
-    min-width: 200px;
     background: url(efficiency.png);
     background-size: cover;
   background-position: center;
@@ -678,8 +664,6 @@ margin-top: 50px;
 }
 
 .q6{
-    height: 100px;
-    min-width: 200px;
     background: url(value.png);
     background-size: cover;
   background-position: center;
@@ -688,8 +672,6 @@ margin-top: 50px;
 }
 
 .q7 {
-    height: 100px;
-    min-width: 200px;
     background: url(authenticity.png);
     background-size: cover;
   background-position: center;
@@ -698,8 +680,6 @@ margin-top: 50px;
 }
 
 .q8 {
-    height: 100px;
-    min-width: 200px;
     background: url(ease.png);
     background-size: cover;
   background-position: center;
@@ -709,11 +689,56 @@ margin-top: 50px;
 }
 
 .q9 {
-    height: 100px;
-    min-width: 200px;
     background: url(trust.png);
     background-size: cover;
   background-position: center;
     background-repeat: no-repeat;
 
 }
+
+.tile {
+  display: block;
+  width: 300px;
+  height: 150px;
+
+}
+
+.tile-row {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+}
+
+/*Email form*/
+
+.emailForm  {
+
+  display: block;
+  text-align: center;
+  padding-top: 150px;
+  color: #fff;
+
+}
+
+.inPut  {
+  background: none;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  text-align: center;
+
+
+}
+
+.field  {
+  background: #ff0052;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #ff0052;
+  border-radius: 0px;
+}
+
+

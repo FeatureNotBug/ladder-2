@@ -1,12 +1,82 @@
-<h1>How well do you know your brand?</h1>
-<p>Something super awesome and catchy will be on this page</p>
+<head>
 
-<h2>You chose:</h2>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Performance Branding</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="<%= asset_path('bootstrap.min.css') %>" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="<%= asset_path('freelancer.css') %>" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index email">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Performance Branding by<img class="logo-header img-responsive" src="<%= asset_path('ladder.png') %>"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="welcome#portfolio">ABOUT</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="welcome#contact">GET IN TOUCH</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+        <div class="container">
+
+
+ <!-- white box with title and email from -->
+
+
+        <div class="row emailForm"> 
+
+        <div class="col-sm-12">
+        <h2>Thank you for taking our assessment!<br><br>Speak to a strategist now.</h2>
+<p>Your brand is composed of many things.  You chose...<br>
 <%= @form.types %>
 <%= @form.targets %>
 <%= @form.msgs %>
-<br>
-<h2>But which of these are you actually?</h2>
+</p>
+<p>But which combination will represent you most accurately?  You might be any of these....<br>
 <% blah = @form.types.product(@form.msgs, @form.targets) %>
 <% success = 0 %>
 <% fail = 0 %>
@@ -27,27 +97,42 @@
 <% end %>
 <br>
 <%= used %>
-<!--
-<% trip = make_triplet(@audience_arr, @identity_arr, @message_arr) %>
-<%= trip.element1 %>
-<%= trip.element2 %>
-<%= trip.element3 %>
--->
-<p> if generating many of above, will want to make sure not same one selected each time </p>
-
-<h2>Contact info section</h2>
+</p>
+            <div class="col-xs-12" style="margin-top: 40px;">
 <%= form_for(Contact.new) do |f| %>
   <div>
-  <%= f.email_field :email, required: true %>
-  <%= f.label("Email") %>
-  </div>
-
-  <div>
-  <%= f.url_field :website, required: true %>
-  <%= f.label("Website") %>
+  <%= f.email_field :email, class: "form-control inPut", placeholder: "E-MAIL" %>
+  <%= f.url_field :website, class: "form-control inPut", placeholder: "WEBSITE" %>
   </div>
 
   <br>
-  <%= f.submit "Create", class: "btn btn-primary" %>
+  <p><%= f.submit "TALK TO A STRATEGIST", class: "btn btn-default field" %></p>
 <% end %>
+
+    </div>
+    </div>
+    </div>
+        
+
+    </div>
+
+
+
+    <!-- jQuery     <script src="<%= asset_path('vendor/jquery/jquery.min.js') %>"></script> -->
+    <script src="<%= asset_path('jquery.min.js') %>"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<%= asset_path('bootstrap.min.js') %>"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="<%= asset_path('jqBootstrapValidation.js') %>"></script>
+    <script src="<%= asset_path('contact_me.js') %>"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="<%= asset_path('freelancer.min.js') %>"></script>
+
+</body>
 
